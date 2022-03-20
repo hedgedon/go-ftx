@@ -47,9 +47,9 @@ func (req *RequestForPositions) Method() string {
 }
 
 func (req *RequestForPositions) Query() string {
-	// if req.ShowAvgPrice {
-	// 	return "showAvgPrice=true"
-	// }
+	if req.ShowAvgPrice {
+		return "showAvgPrice=true"
+	}
 	return ""
 }
 
